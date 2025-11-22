@@ -1,42 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:i_movie/common/const.dart';
+import 'package:i_movie/util/EventBus.dart';
 
-Appbar(String title, String rightTitle,VoidCallback rightButtonClick) {
+HomeAppbar() {
   return AppBar(
-    centerTitle: false,
-    titleSpacing: 0,
-    leading: BackButton(),
-    title: Text(title,style: TextStyle(fontSize: 18),),
-    actions: [
-      InkWell(
-        onTap: rightButtonClick,
-        child: Container(
-          padding: EdgeInsets.only(left: 15, right: 15),
-          alignment: Alignment.center,
-          child: Text(rightTitle, style: TextStyle(fontSize: 18,color: Colors.grey[500]),textAlign: TextAlign.center,),
+    centerTitle: true,
+    leading: IconButton(
+      onPressed: () {
+        eventBus.emit(Events.BOTTOMBAR.name, 1);
+      },
+      enableFeedback: false,
+      highlightColor: WhiteColor,
+      icon: ClipRRect(
+        borderRadius: BorderRadius.circular(24),
+        child: Image.asset("images/user.jpg", fit: BoxFit.fill),
+      ),
+    ),
+    title: Container(
+      height: 36,
+      child: TextField(
+        decoration: InputDecoration(
+          prefixIcon: Padding(
+            padding: EdgeInsets.only(left: 10),
+            child: Icon(Icons.search, color: Colors.grey),
+          ),
+          contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          alignLabelWithHint: false,
+          prefixIconConstraints: BoxConstraints(),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(24),
+            borderSide: BorderSide(color: Colors.grey, width: 1.0),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.grey, width: 1.0),
+            borderRadius: BorderRadius.circular(24),
+          ),
+          hintText: '搜索',
+          hintStyle: TextStyle(fontSize: 14),
         ),
-      )
+        onChanged: (text) {},
+      ),
+    ),
+
+    actions: [
+      IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.email_outlined, size: 28),
+        color: primary,
+        enableFeedback: false,
+        highlightColor: null,
+      ),
     ],
   );
 }
-
-// class AppBar extends StatefulWidget {
-//   @override
-//   _AppBar createState() => _AppBar();
-// }
-
-// class _AppBar extends State<AppBar> {
-//   @override
-//   void initState() {
-//     super.initState();
-//   }
-
-//   @override
-//   void dispose() {
-//     super.dispose();
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return AppBar();
-//   }
-// }
