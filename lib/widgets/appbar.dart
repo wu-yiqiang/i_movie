@@ -17,7 +17,7 @@ HomeAppbar() {
       ),
     ),
     title: Container(
-      height: 36,
+      height: 32,
       child: TextField(
         decoration: InputDecoration(
           prefixIcon: Padding(
