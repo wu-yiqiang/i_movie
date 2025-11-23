@@ -17,8 +17,9 @@ HomeAppbar() {
       ),
     ),
     title: Container(
-      height: 32,
+      height: 34,
       child: TextField(
+        cursorColor: primary,
         decoration: InputDecoration(
           prefixIcon: Padding(
             padding: EdgeInsets.only(left: 10),
@@ -27,6 +28,7 @@ HomeAppbar() {
           contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           alignLabelWithHint: false,
           prefixIconConstraints: BoxConstraints(),
+        
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(24),
             borderSide: BorderSide(color: Colors.grey, width: 1.0),
