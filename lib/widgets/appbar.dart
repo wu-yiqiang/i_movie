@@ -49,8 +49,8 @@ HomeAppbar() {
         onPressed: () {},
         icon: Icon(Icons.email_outlined, size: 28),
         color: primary,
-        enableFeedback: false,
-        highlightColor: null,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
       ),
     ],
   );

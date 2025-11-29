@@ -87,6 +87,8 @@ class _MyPage extends State<MyPage> {
                     child: IconButton(
                       padding: EdgeInsets.zero,
                       alignment: Alignment.center,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
                       icon: Flex(
                         spacing: 4,
                         direction: Axis.vertical,
@@ -116,6 +118,8 @@ class _MyPage extends State<MyPage> {
                     child: IconButton(
                       padding: EdgeInsets.zero,
                       alignment: Alignment.center,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
                       icon: Flex(
                         spacing: 4,
                         direction: Axis.vertical,
