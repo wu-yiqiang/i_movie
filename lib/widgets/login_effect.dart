@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:i_movie/common/const.dart';
 
 class LoginEffect extends StatefulWidget {
   final bool protect;

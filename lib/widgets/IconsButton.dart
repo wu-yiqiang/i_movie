@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:i_movie/common/const.dart';
-import 'package:i_movie/util/EventBus.dart';
 
 IconsButton({
   Color color = Colors.grey,

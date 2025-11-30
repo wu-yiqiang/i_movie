@@ -160,7 +160,7 @@ class _RecommendPage extends State<RecommendPage> {
                 // padding: EdgeInsets.all(6),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6),
-                  border: BoxBorder.all(color: primary),
+                  color: const Color.fromARGB(239, 247, 247, 247),
                 ),
               );
             },
