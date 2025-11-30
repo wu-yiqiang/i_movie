@@ -62,10 +62,14 @@ class _MyPage extends State<MyPage> {
                             ),
                           ],
                         ),
-                        Icon(
+                        IconButton(
+                          highlightColor: Colors.transparent,
+                          onPressed: () {},
+                          icon: Icon(
                           Icons.keyboard_arrow_right_outlined,
                           size: 24,
                           color: Colors.grey,
+                          ),
                         ),
                       ],
                     ),
@@ -74,9 +78,40 @@ class _MyPage extends State<MyPage> {
               ),
               Row(
                 children: [
-                  Expanded(child: Column(children: [Text('0'), Text("动态")])),
-                  Expanded(child: Column(children: [Text('0'), Text("关注")])),
-                  Expanded(child: Column(children: [Text('0'), Text("粉丝")])),
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () {},
+                      style: ButtonStyle(enableFeedback: false),
+                      child: Column(
+                        children: [
+                          Text('0', style: TextStyle(color: Colors.black)),
+                          Text("动态", style: TextStyle(color: Colors.black)),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Column(
+                        children: [
+                          Text('0', style: TextStyle(color: Colors.black)),
+                          Text("关注", style: TextStyle(color: Colors.black)),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Column(
+                        children: [
+                          Text('0', style: TextStyle(color: Colors.black)),
+                          Text("粉丝", style: TextStyle(color: Colors.black)),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
               Flex(
@@ -165,7 +200,6 @@ class _MyPage extends State<MyPage> {
                         Padding(
                           padding: EdgeInsets.only(left: 20),
                           child: Column(
-                            spacing: 20,
                             children: [
                               Flex(
                                 direction: Axis.horizontal,
@@ -186,10 +220,14 @@ class _MyPage extends State<MyPage> {
                                       ),
                                     ],
                                   ),
-                                  Icon(
-                                    Icons.keyboard_arrow_right_outlined,
-                                    size: 24,
-                                    color: Colors.grey,
+                                  IconButton(
+                                    highlightColor: Colors.transparent,
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_right_outlined,
+                                      size: 24,
+                                      color: Colors.grey,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -212,10 +250,14 @@ class _MyPage extends State<MyPage> {
                                       ),
                                     ],
                                   ),
-                                  Icon(
-                                    Icons.keyboard_arrow_right_outlined,
-                                    size: 24,
-                                    color: Colors.grey,
+                                  IconButton(
+                                    highlightColor: Colors.transparent,
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_right_outlined,
+                                      size: 24,
+                                      color: Colors.grey,
+                                    ),
                                   ),
                                 ],
                               ),
