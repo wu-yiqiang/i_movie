@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:i_movie/common/const.dart';
+import 'package:i_movie/widgets/IconsButton.dart';
 
 class MyPage extends StatefulWidget {
   const MyPage({super.key});
@@ -14,17 +15,20 @@ class _MyPage extends State<MyPage> {
       child: Scaffold(
         appBar: AppBar(
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.qr_code_scanner_outlined, size: 24),
+            IconsButton(
+              icon: Icons.qr_code_scanner_outlined,
+              color: const Color.fromARGB(221, 59, 58, 58),
+              onPress: () {},
             ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.qr_code_outlined, size: 24),
+            IconsButton(
+              icon: Icons.qr_code_outlined,
+              color: const Color.fromARGB(221, 59, 58, 58),
+              onPress: () {},
             ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.dark_mode_outlined, size: 24),
+            IconsButton(
+              icon: Icons.dark_mode_outlined,
+              onPress: () {},
+              color: const Color.fromARGB(221, 59, 58, 58),
             ),
           ],
         ),
@@ -62,15 +66,10 @@ class _MyPage extends State<MyPage> {
                             ),
                           ],
                         ),
-                        IconButton(
-                          highlightColor: Colors.transparent,
-                          onPressed: () {},
-                          icon: Icon(
-                          Icons.keyboard_arrow_right_outlined,
-                          size: 24,
-                          color: Colors.grey,
-                          ),
-                        ),
+                        IconsButton(
+                          icon: Icons.keyboard_arrow_right_outlined,
+                          onPress: () {},
+                        )
                       ],
                     ),
                   ),
@@ -220,14 +219,9 @@ class _MyPage extends State<MyPage> {
                                       ),
                                     ],
                                   ),
-                                  IconButton(
-                                    highlightColor: Colors.transparent,
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.keyboard_arrow_right_outlined,
-                                      size: 24,
-                                      color: Colors.grey,
-                                    ),
+                                  IconsButton(
+                                    icon: Icons.keyboard_arrow_right_outlined,
+                                    onPress: () {},
                                   ),
                                 ],
                               ),
@@ -250,15 +244,11 @@ class _MyPage extends State<MyPage> {
                                       ),
                                     ],
                                   ),
-                                  IconButton(
-                                    highlightColor: Colors.transparent,
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.keyboard_arrow_right_outlined,
-                                      size: 24,
-                                      color: Colors.grey,
-                                    ),
+                                  IconsButton(
+                                    icon: Icons.keyboard_arrow_right_outlined,
+                                    onPress: () {},
                                   ),
+                                  
                                 ],
                               ),
                             ],

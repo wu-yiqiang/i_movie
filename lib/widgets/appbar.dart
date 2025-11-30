@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:i_movie/common/const.dart';
 import 'package:i_movie/util/EventBus.dart';
+import 'package:i_movie/widgets/IconsButton.dart';
 
 HomeAppbar() {
   return AppBar(
@@ -45,12 +46,11 @@ HomeAppbar() {
     ),
 
     actions: [
-      IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.email_outlined, size: 28),
+      IconsButton(
         color: primary,
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
+        icon: Icons.email_outlined,
+        size: 28,
+        onPress: () {}
       ),
     ],
   );
