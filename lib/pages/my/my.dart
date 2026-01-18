@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:i_movie/common/const.dart';
+import 'package:i_movie/navigator/navigators.dart';
+import 'package:i_movie/util/EventBus.dart';
 import 'package:i_movie/widgets/IconsButton.dart';
 
 class MyPage extends StatefulWidget {
@@ -69,7 +71,7 @@ class _MyPage extends State<MyPage> {
                         IconsButton(
                           icon: Icons.keyboard_arrow_right_outlined,
                           onPress: () {},
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -221,7 +223,13 @@ class _MyPage extends State<MyPage> {
                                   ),
                                   IconsButton(
                                     icon: Icons.keyboard_arrow_right_outlined,
-                                    onPress: () {},
+                                    onPress: () {
+                                      // eventBus.emit(Events.NAVIGATE.name, {'path': '/settings', 'args': null});
+                                      Navigate.pushReplacementNamed(
+                                        context,
+                                        '/settings',
+                                      );
+                                    },
                                   ),
                                 ],
                               ),
@@ -248,7 +256,6 @@ class _MyPage extends State<MyPage> {
                                     icon: Icons.keyboard_arrow_right_outlined,
                                     onPress: () {},
                                   ),
-                                  
                                 ],
                               ),
                             ],
